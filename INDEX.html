@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Topics Covered</h2>
+    <ol type="I">
+        <li>HTML5 Basics</li>
+        <li>Working with Forms</li>
+        <li>Multimedia Integration</li>
+        <li>Tables and Lists</li>
+        <li>Semantic Elements</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>Image</h2>
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Sample Image" width="500">
+
+    <!-- Table with Contacts -->
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Moses Kerama</td>
+            <td>Nakuru</td>
+            <td>+254711543471</td>
+            <td>mkerama07@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Patrick Ndirangu</td>
+            <td>Embu</td>
+            <td>+254727399196</td>
+            <td>pattndirangu@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Omari Edwin</td>
+            <td>Nairobi</td>
+            <td>+254705805455</td>
+            <td>edubiku75@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sammy Kagunyo</td>
+            <td>Makuyu</td>
+            <td>+25478078899</td>
+            <td>skagunyo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Emily Davis</td>
+            <td>Mombasa</td>
+            <td>+254725264852</td>
+            <td>edavis05@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+        </select><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Audio and Video Elements -->
+    <h2>Multimedia Elements</h2>
+    <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <video controls width="500">
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>
